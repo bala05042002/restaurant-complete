@@ -10,7 +10,7 @@ const FinalPayment = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.put('http://localhost:8000/payment/'+tableNo, {newString:selected, cost:grandTotal})
+        axios.put('https://restaurant-backend-tcek.onrender.com/payment/'+tableNo, {newString:selected, cost:grandTotal})
         .then(result => {
             console.log(result);
             setTimeout(() => {
