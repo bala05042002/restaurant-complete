@@ -13,7 +13,7 @@ const Search = () => {
   const { selectedFood, setSelectedFood, setUserFoods, setTotalCost,setFoodCount, totalCost } = useContext(AppContext);
 
   const fetchResults = (searchQuery) => {
-    axios.post('http://localhost:8000/search', { query: searchQuery })
+    axios.post('https://restaurant-backend-tcek.onrender.com/search', { query: searchQuery })
     .then(result => {
       setFoodDetails(result.data);
     })
