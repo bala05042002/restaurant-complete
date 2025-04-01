@@ -8,7 +8,7 @@ const Dessert = () => {
   const { selectedFood, setSelectedFood, setUserFoods, setTotalCost,setFoodCount } = useContext(AppContext);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/Dessert')
+    axios.get('https://restaurant-backend-tcek.onrender.com/Dessert')
     .then(result => {
       setGravy(result.data);
       console.log(result.data);
