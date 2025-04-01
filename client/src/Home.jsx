@@ -8,7 +8,7 @@ const Home = () => {
     const { selectedFood, setSelectedFood, setUserFoods, setTotalCost,setFoodCount } = useContext(AppContext);
 
     useEffect(() => {
-        axios('http://localhost:8000')
+        axios('https://restaurant-backend-tcek.onrender.com')
         .then(result => {
             setFoodDetails(result.data);
         })
