@@ -1,0 +1,6 @@
+[build]
+  functions = "netlify/functions"  # where your backend code now resides
+  publish = "frontend/build"
+
+[functions]
+  node_bundler = "esbuild"
