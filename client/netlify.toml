@@ -1,0 +1,4 @@
+[build]
+  base = "client"        # Sets the working directory to the client folder
+  command = "npm run build"
+  publish = "build"      # This is relative to the base directory
